@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facial Recognition System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header-container">
+    <h1>Facial Recognition System</h1>
+  </div>
+
+  <!-- Stream video via webcam -->
+  <div class="video-wrap">
+    <video id="video" playsinline autoplay></video>
+  </div>
+  <!-- Trigger canvasWeb API -->
+  <div class="controller">
+    <button id="snap">Capture</button>
+  </div>
+  <!-- Webcam video snapshot -->
+  <canvas id="canvas" width="640" height="480"></canvas>
+
+  <!-- Input for uploading an image -->
+  <div id="upload-container">
+    <label for="upload">Upload an image:</label>
+    <label class="custom-file-upload">
+      <input type="file" accept="image/*" id="upload" name="upload">Choose File
+    </label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
